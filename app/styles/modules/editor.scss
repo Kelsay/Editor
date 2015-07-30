@@ -1,0 +1,83 @@
+.editor {
+
+    .textarea {
+        padding: 10px;
+    }
+
+    .list-group-item {
+        position: relative;
+        padding: 0 48px 0 0;
+        margin: 10px 0;
+    }
+
+    .action {
+        cursor: pointer;
+        width: 24px;
+        height: 100%;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        vertical-align: middle;
+        font-size: 12px;
+        text-align: center;
+
+        &.plus {
+            background: #a7c648;
+            right: 24px;
+        }
+
+        &.minus {
+            background: #bb5b42;
+        }
+
+        &.inactive {
+            background: #ccc !important;
+        }
+
+        i {
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 50%;
+            margin-top: -7px;
+            width: 24px;
+            text-align: center;
+        }
+    }
+
+    // Custom placeholder
+    [contenteditable=true]:empty:before {
+        content: attr(placeholder);
+        display: block;
+        font-style: italic;
+    }
+
+    // Drag'n'drop styles
+    ul[dnd-list],
+    ul[dnd-list] > li {
+        position: relative;
+    }
+    // Active dragged elemet
+    ul[dnd-list] .dndDraggingSource {
+        //display: none;
+        opacity: 0;
+    }
+
+    ul[dnd-list] .dndPlaceholder2 {
+        display: block;
+        background-color: #ddd;
+        min-height: 42px;
+    }
+
+    ul[dnd-list] .dndPlaceholder {
+        width: 100%;
+        background: #f00;
+        height: 0;
+        outline: 2px solid #ff5c31;
+        top: -5px;
+        position: relative;
+    }
+
+}

@@ -1,0 +1,42 @@
+body {
+    overflow-y: scroll; // scrollbar always visible to prevent screen jumping between sections
+    overflow-x: hidden;
+    background: url(/build/images/bg.jpg) fixed no-repeat, url(/build/images/stripes.png);
+    background-size: cover;
+    padding: 120px 0 100px 0;
+}
+
+.title {
+    padding: 0 0 80px 0;
+    color: #fffbeb;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    font-family: Exo, Helvetica, Arial, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+// The main container for body copy
+
+.main-container {
+    background: rgba(255,255,255,0.9);
+    padding: 40px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+// Main menu
+.main-menu {
+    background: #fff;
+    height: 50px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding-top: 8px;
+}
