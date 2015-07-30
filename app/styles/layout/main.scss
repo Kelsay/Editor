@@ -1,7 +1,7 @@
 body {
     overflow-y: scroll; // scrollbar always visible to prevent screen jumping between sections
     overflow-x: hidden;
-    background: url(/build/images/bg.jpg) fixed no-repeat, url(/build/images/stripes.png);
+    background: url(/build/images/bg.jpg) fixed no-repeat;
     background-size: cover;
     padding: 120px 0 100px 0;
 }
